@@ -1,37 +1,46 @@
 # Task-5_Classera
 Sales data analysis notebook exploring trends, cleaning data, and visualizing product performance using Python (Pandas, Seaborn).
-# Sales Data Analysis
+# Sales Data Analysis Notebook
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Pandas](https://img.shields.io/badge/Pandas-1.0%2B-orange)
-![Seaborn](https://img.shields.io/badge/Seaborn-0.11%2B-red)
+🔍 A step-by-step exploration of sales transaction data to uncover business insights and patterns.
 
-A comprehensive analysis of sales data, including:
-- Data cleaning and preprocessing
-- Time-based trend analysis
-- Product performance visualizations
-- Sales metrics calculations
+## What This Notebook Does
 
-## Features
-- 🧹 Automated missing value handling
-- 📅 Date feature extraction (year/month/day/weekday)
-- 📈 Interactive visualizations
-- 💰 Profit margin calculations
+This Jupyter notebook performs a complete analysis of sales data, walking through:
 
-## Usage
-1. Clone repository
-2. Install requirements: `pip install pandas numpy seaborn matplotlib`
-3. Run Jupyter notebook: `jupyter notebook sales_analysis.ipynb`
+1. **Data Loading & First Look**
+   - Imports the dataset (2,823 sales records)
+   - Examines structure, data types, and basic statistics
 
-## Sample Visualization
-![Sales by Product Line](sample_plot.png) *Example output from analysis*
+2. **Data Cleaning**
+   - Fixes missing values in addresses and locations
+   - Checks for negative values in key metrics
+   - Validates sales calculations (quantity × price)
 
-## Data Source
-`sales_data_sample.csv` - Contains 2,823 sales records with:
-- Order details (quantity, price, sales)
-- Product information
-- Customer demographics
-- Timestamps
+3. **Feature Engineering**
+   - Extracts time components from dates (year, month, day, weekday)
+   - Calculates profit margins and total costs
+   - Identifies holiday season orders (Nov-Dec)
 
-## License
-MIT
+4. **Customer Analysis**
+   - Tracks days between customer orders
+   - Calculates order frequency per customer
+
+5. **Visualizations**
+   - Product line performance comparison
+   - Time-based sales trends (ready for deeper analysis)
+
+## Key Questions Answered
+
+✔ Which product lines generate the most revenue?  
+✔ When do most sales occur (by month/weekday)?  
+✔ How accurate are the existing sales records?  
+✔ What's the distribution of order sizes and profit margins?
+
+## How To Use
+
+1. **Requirements**: Python 3.8+, Jupyter Notebook
+2. **Install dependencies**:
+   ```bash
+   pip install pandas numpy seaborn matplotlib
+
